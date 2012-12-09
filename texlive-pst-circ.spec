@@ -59,3 +59,17 @@ expressing a circuit.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.02-2
++ Revision: 755226
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.02-1
++ Revision: 719339
+- texlive-pst-circ
+- texlive-pst-circ
+- texlive-pst-circ
+- texlive-pst-circ
+
