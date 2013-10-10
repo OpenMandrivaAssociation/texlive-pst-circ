@@ -1,31 +1,30 @@
-# revision 22444
+# revision 31820
 # category Package
 # catalog-ctan /graphics/pstricks/contrib/pst-circ
-# catalog-date 2011-05-12 00:58:47 +0200
+# catalog-date 2013-10-03 14:41:14 +0200
 # catalog-license lppl
-# catalog-version 2.02
+# catalog-version 2.05
 Name:		texlive-pst-circ
-Version:	2.02
-Release:	2
+Version:	2.05
+Release:	1
 Summary:	PSTricks package for drawing electric circuits
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-circ
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-circ.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-circ.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-circ.source.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-Pst-circ is a package built using PSTricks and in particular
-pst-node. It can easily draw current 2-terminal devices and
-some 3- and 4-terminal devices used in electronic or electric
-theory. The package's macros are designed with a view to
-'logical' representation of circuits, as far as possible, so as
-to relieve the user of purely graphical considerations when
+The package is built using PSTricks and in particular pst-node.
+It can easily draw current 2-terminal devices and some 3- and
+4-terminal devices used in electronic or electric theory. The
+package's macros are designed with a view to 'logical'
+representation of circuits, as far as possible, so as to
+relieve the user of purely graphical considerations when
 expressing a circuit.
 
 %post
@@ -43,33 +42,20 @@ expressing a circuit.
 %{_texmfdistdir}/tex/latex/pst-circ/pst-circ.sty
 %doc %{_texmfdistdir}/doc/generic/pst-circ/Changes
 %doc %{_texmfdistdir}/doc/generic/pst-circ/README
-%doc %{_texmfdistdir}/doc/generic/pst-circ/more_docs/dtk03-3.pdf
+%doc %{_texmfdistdir}/doc/generic/pst-circ/dtk03-3.bib
+%doc %{_texmfdistdir}/doc/generic/pst-circ/dtk03-3.ltx
+%doc %{_texmfdistdir}/doc/generic/pst-circ/dtk03-3.pdf
+%doc %{_texmfdistdir}/doc/generic/pst-circ/dtk03-3.tex
 %doc %{_texmfdistdir}/doc/generic/pst-circ/pst-circ-doc.bib
 %doc %{_texmfdistdir}/doc/generic/pst-circ/pst-circ-doc.pdf
 %doc %{_texmfdistdir}/doc/generic/pst-circ/pst-circ-doc.tex
-#- source
-%doc %{_texmfdistdir}/source/generic/pst-circ/Makefile
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a0 -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar dvips tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.02-2
-+ Revision: 755226
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.02-1
-+ Revision: 719339
-- texlive-pst-circ
-- texlive-pst-circ
-- texlive-pst-circ
-- texlive-pst-circ
-
+cp -fpar dvips tex doc %{buildroot}%{_texmfdistdir}
