@@ -1,12 +1,12 @@
-# revision 31820
+# revision 34127
 # category Package
 # catalog-ctan /graphics/pstricks/contrib/pst-circ
-# catalog-date 2013-10-03 14:41:14 +0200
+# catalog-date 2014-05-18 22:26:36 +0200
 # catalog-license lppl
-# catalog-version 2.05
+# catalog-version 2.09
 Name:		texlive-pst-circ
-Version:	2.05
-Release:	6
+Version:	2.09
+Release:	1
 Summary:	PSTricks package for drawing electric circuits
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-circ
