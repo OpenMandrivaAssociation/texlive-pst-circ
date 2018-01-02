@@ -1,12 +1,6 @@
-# revision 34127
-# category Package
-# catalog-ctan /graphics/pstricks/contrib/pst-circ
-# catalog-date 2014-05-18 22:26:36 +0200
-# catalog-license lppl
-# catalog-version 2.09
 Name:		texlive-pst-circ
-Version:	2.09
-Release:	4
+Version:	2.15
+Release:	1
 Summary:	PSTricks package for drawing electric circuits
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-circ
@@ -37,18 +31,10 @@ expressing a circuit.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/dvips/pst-circ/pst-circ.pro
-%{_texmfdistdir}/tex/generic/pst-circ/pst-circ.tex
-%{_texmfdistdir}/tex/latex/pst-circ/pst-circ.sty
-%doc %{_texmfdistdir}/doc/generic/pst-circ/Changes
-%doc %{_texmfdistdir}/doc/generic/pst-circ/README
-%doc %{_texmfdistdir}/doc/generic/pst-circ/dtk03-3.bib
-%doc %{_texmfdistdir}/doc/generic/pst-circ/dtk03-3.ltx
-%doc %{_texmfdistdir}/doc/generic/pst-circ/dtk03-3.pdf
-%doc %{_texmfdistdir}/doc/generic/pst-circ/dtk03-3.tex
-%doc %{_texmfdistdir}/doc/generic/pst-circ/pst-circ-doc.bib
-%doc %{_texmfdistdir}/doc/generic/pst-circ/pst-circ-doc.pdf
-%doc %{_texmfdistdir}/doc/generic/pst-circ/pst-circ-doc.tex
+%{_texmfdistdir}/dvips/pst-circ
+%{_texmfdistdir}/tex/generic/pst-circ
+%{_texmfdistdir}/tex/latex/pst-circ
+%doc %{_texmfdistdir}/doc/generic/pst-circ
 
 #-----------------------------------------------------------------------
 %prep
