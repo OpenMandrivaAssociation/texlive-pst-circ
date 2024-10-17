@@ -3,7 +3,7 @@ Version:	60464
 Release:	2
 Summary:	PSTricks package for drawing electric circuits
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-circ
+URL:		https://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-circ
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-circ.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-circ.doc.r%{version}.tar.xz
